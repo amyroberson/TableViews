@@ -20,6 +20,7 @@
 		E10680461E2AD244006107D5 /* ClassificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680451E2AD244006107D5 /* ClassificationTests.swift */; };
 		E10680481E2AD28E006107D5 /* CharactersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680471E2AD28E006107D5 /* CharactersDataSource.swift */; };
 		E106804A1E2ADB65006107D5 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680491E2ADB65006107D5 /* CharacterCell.swift */; };
+		E106804C1E2AE38B006107D5 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E106804B1E2AE38B006107D5 /* CharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E10680451E2AD244006107D5 /* ClassificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationTests.swift; sourceTree = "<group>"; };
 		E10680471E2AD28E006107D5 /* CharactersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersDataSource.swift; sourceTree = "<group>"; };
 		E10680491E2ADB65006107D5 /* CharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		E106804B1E2AE38B006107D5 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				E10680111E2AD1BF006107D5 /* AppDelegate.swift */,
 				E10680131E2AD1BF006107D5 /* CharacterViewController.swift */,
 				E106803F1E2AD1E1006107D5 /* Classification.swift */,
+				E106804B1E2AE38B006107D5 /* CharacterDetailViewController.swift */,
 				E10680411E2AD1EB006107D5 /* PlayerCharacter.swift */,
 				E10680471E2AD28E006107D5 /* CharactersDataSource.swift */,
 				E10680151E2AD1BF006107D5 /* Main.storyboard */,
@@ -284,6 +287,7 @@
 				E10680121E2AD1BF006107D5 /* AppDelegate.swift in Sources */,
 				E10680421E2AD1EB006107D5 /* PlayerCharacter.swift in Sources */,
 				E106804A1E2ADB65006107D5 /* CharacterCell.swift in Sources */,
+				E106804C1E2AE38B006107D5 /* CharacterDetailViewController.swift in Sources */,
 				E10680401E2AD1E1006107D5 /* Classification.swift in Sources */,
 				E10680481E2AD28E006107D5 /* CharactersDataSource.swift in Sources */,
 			);
