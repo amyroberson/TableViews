@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,11 +39,17 @@
                                                 <rect key="frame" x="325" y="7" width="30" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xuc-3L-vyQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48P-7G-xgb">
                                                 <rect key="frame" x="20" y="7" width="35" height="36"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                                 <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="editStateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfD-0Y-IP8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,11 +110,111 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="editStateButton" destination="48P-7G-xgb" id="SPn-OY-Njl"/>
                         <outlet property="tableView" destination="g6u-Z8-iOl" id="3mz-nA-pZg"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Car Creator View Controller-->
+        <scene sceneID="Aw2-G5-eXq">
+            <objects>
+                <viewController storyboardIdentifier="CarCreator" id="QOC-PA-EZ8" customClass="CarCreatorViewController" customModule="CarTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BP0-hh-mwn"/>
+                        <viewControllerLayoutGuide type="bottom" id="xC8-p0-opW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2B-m5-oTA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OB6-mM-J0x">
+                                <rect key="frame" x="41.5" y="89" width="292.5" height="390"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Car:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUQ-gU-9UW">
+                                        <rect key="frame" x="72" y="0.0" width="148" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioi-qM-kWZ">
+                                        <rect key="frame" x="125.5" y="49" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is the Make?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-CA-uYq">
+                                        <rect key="frame" x="76" y="89.5" width="140" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9T-go-9Rk">
+                                        <rect key="frame" x="122.5" y="139.5" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is the Model?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pN-aj-1QT">
+                                        <rect key="frame" x="73.5" y="180" width="145" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have this car, or want to?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6em-8O-fKD">
+                                        <rect key="frame" x="22" y="230" width="248.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter &quot;Have&quot; or &quot;Want&quot;" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xht-r2-bds">
+                                        <rect key="frame" x="61.5" y="270.5" width="169.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Enough Information to Create A Car!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4J-MP-FpF">
+                                        <rect key="frame" x="0.0" y="320.5" width="292.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.96470588235294119" green="0.20587614644479804" blue="0.19159717784801217" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-bZ-C9K">
+                                        <rect key="frame" x="118" y="360" width="56" height="30"/>
+                                        <state key="normal" title="Add Car"/>
+                                        <connections>
+                                            <action selector="addCarButton:" destination="QOC-PA-EZ8" eventType="touchUpInside" id="2hX-Zw-1N8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yao-hN-Fh7">
+                                <rect key="frame" x="15" y="20" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="QOC-PA-EZ8" eventType="touchUpInside" id="W0N-c3-2Mz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yao-hN-Fh7" firstAttribute="top" secondItem="BP0-hh-mwn" secondAttribute="bottom" id="KVA-eX-O6f"/>
+                            <constraint firstItem="OB6-mM-J0x" firstAttribute="centerY" secondItem="d2B-m5-oTA" secondAttribute="centerY" constant="-50" id="SCJ-St-DHF"/>
+                            <constraint firstItem="yao-hN-Fh7" firstAttribute="leading" secondItem="d2B-m5-oTA" secondAttribute="leadingMargin" constant="-1" id="bbn-84-H2l"/>
+                            <constraint firstItem="OB6-mM-J0x" firstAttribute="centerX" secondItem="d2B-m5-oTA" secondAttribute="centerX" id="iQB-bA-84j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="haveORWantTextField" destination="Xht-r2-bds" id="dy3-Y4-NLw"/>
+                        <outlet property="makeTextField" destination="a4E-CA-uYq" id="HsI-PC-Zgm"/>
+                        <outlet property="modelTextField" destination="8pN-aj-1QT" id="UH3-ev-JYN"/>
+                        <outlet property="notEnoughLabel" destination="B4J-MP-FpF" id="qqZ-wV-bkC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOY-XT-NUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="137"/>
         </scene>
     </scenes>
 </document>

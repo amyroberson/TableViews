@@ -16,6 +16,7 @@
 		E106807A1E2B2913006107D5 /* CarTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680791E2B2913006107D5 /* CarTableViewUITests.swift */; };
 		E10680881E2B2925006107D5 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680871E2B2925006107D5 /* Car.swift */; };
 		E106808A1E2C6137006107D5 /* CarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680891E2C6137006107D5 /* CarsDataSource.swift */; };
+		E106808C1E2D239F006107D5 /* CarCreatorViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E106808B1E2D239F006107D5 /* CarCreatorViewContoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E106807B1E2B2913006107D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10680871E2B2925006107D5 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		E10680891E2C6137006107D5 /* CarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsDataSource.swift; sourceTree = "<group>"; };
+		E106808B1E2D239F006107D5 /* CarCreatorViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCreatorViewContoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E106805B1E2B2913006107D5 /* CarsViewController.swift */,
 				E106805D1E2B2913006107D5 /* Main.storyboard */,
 				E10680871E2B2925006107D5 /* Car.swift */,
+				E106808B1E2D239F006107D5 /* CarCreatorViewContoller.swift */,
 				E10680891E2C6137006107D5 /* CarsDataSource.swift */,
 				E10680601E2B2913006107D5 /* Assets.xcassets */,
 				E10680621E2B2913006107D5 /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 			files = (
 				E106805C1E2B2913006107D5 /* CarsViewController.swift in Sources */,
 				E106805A1E2B2913006107D5 /* AppDelegate.swift in Sources */,
+				E106808C1E2D239F006107D5 /* CarCreatorViewContoller.swift in Sources */,
 				E10680881E2B2925006107D5 /* Car.swift in Sources */,
 				E106808A1E2C6137006107D5 /* CarsDataSource.swift in Sources */,
 			);

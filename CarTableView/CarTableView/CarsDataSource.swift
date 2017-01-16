@@ -41,4 +41,11 @@ class CarsDataSource: NSObject, UITableViewDataSource{
             return self.section[section]
         }
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            cars[indexPath.section].remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
 }
