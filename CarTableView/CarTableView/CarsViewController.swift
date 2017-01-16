@@ -9,21 +9,22 @@
 import UIKit
 
 class CarsViewController: UIViewController, UITableViewDelegate, CarCreatorViewControllerDelegate {
-
+    
     var dataSource = CarsDataSource()
     
     
     @IBOutlet weak var editStateButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
-   
+    
     @IBAction func editStateButton(_ sender: UIButton) {
         if tableView.isEditing {
             tableView.isEditing = false
+            editStateButton.setTitle("Edit", for: .normal)
         } else {
             tableView.isEditing = true
+            editStateButton.setTitle("Done", for: .normal)
         }
         
-        // if possible update editing label
     }
     
     @IBAction func addCarButton(_ sender: UIButton) {
@@ -41,22 +42,22 @@ class CarsViewController: UIViewController, UITableViewDelegate, CarCreatorViewC
         tableView.dataSource = dataSource
         tableView.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-
+    
     //moves car from one section to the other when editing is active
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-            let car = dataSource.cars[indexPath.section].remove(at: indexPath.row)
-            if indexPath.section == 0 {
-                dataSource.cars[1].insert(car, at: 0)
-            } else {
-                dataSource.cars[0].insert(car, at: 0)
-            }
-            tableView.reloadData()
+        let car = dataSource.cars[indexPath.section].remove(at: indexPath.row)
+        if indexPath.section == 0 {
+            dataSource.cars[1].insert(car, at: 0)
+        } else {
+            dataSource.cars[0].insert(car, at: 0)
+        }
+        tableView.reloadData()
     }
     
     
@@ -66,6 +67,6 @@ class CarsViewController: UIViewController, UITableViewDelegate, CarCreatorViewC
         dismiss(animated: true, completion: nil)
         
     }
-
+    
 }
 

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarTableView/CarsViewController.swift"
-            timestampString = "506288076.69958"
+            timestampString = "506291983.131278"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "addCarButton(_:)"
             landmarkType = "7">
          </BreakpointContent>

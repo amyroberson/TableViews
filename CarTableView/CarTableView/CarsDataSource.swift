@@ -15,7 +15,7 @@ class CarsDataSource: NSObject, UITableViewDataSource{
     var cars: [[Car]] = [[Car(make: "Ford", model: "GT 40"), Car(make: "Jaguar", model: "F-Type")], [Car(make: "Chevrolet", model: "Camaro"), Car(make: "Honda", model: "S-2000")]]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
+        
         return self.cars[section].count
     }
     
