@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E106805A1E2B2913006107D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680591E2B2913006107D5 /* AppDelegate.swift */; };
+		E106805C1E2B2913006107D5 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E106805B1E2B2913006107D5 /* CarsViewController.swift */; };
+		E106805F1E2B2913006107D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E106805D1E2B2913006107D5 /* Main.storyboard */; };
+		E10680611E2B2913006107D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10680601E2B2913006107D5 /* Assets.xcassets */; };
+		E10680641E2B2913006107D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10680621E2B2913006107D5 /* LaunchScreen.storyboard */; };
+		E106806F1E2B2913006107D5 /* CarTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E106806E1E2B2913006107D5 /* CarTableViewTests.swift */; };
+		E106807A1E2B2913006107D5 /* CarTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680791E2B2913006107D5 /* CarTableViewUITests.swift */; };
+		E10680881E2B2925006107D5 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680871E2B2925006107D5 /* Car.swift */; };
+		E106808A1E2C6137006107D5 /* CarsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10680891E2C6137006107D5 /* CarsDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E106806B1E2B2913006107D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E106804E1E2B2913006107D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10680551E2B2913006107D5;
+			remoteInfo = CarTableView;
+		};
+		E10680761E2B2913006107D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E106804E1E2B2913006107D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10680551E2B2913006107D5;
+			remoteInfo = CarTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E10680561E2B2913006107D5 /* CarTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10680591E2B2913006107D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E106805B1E2B2913006107D5 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
+		E106805E1E2B2913006107D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E10680601E2B2913006107D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E10680631E2B2913006107D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E10680651E2B2913006107D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E106806A1E2B2913006107D5 /* CarTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E106806E1E2B2913006107D5 /* CarTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewTests.swift; sourceTree = "<group>"; };
+		E10680701E2B2913006107D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10680751E2B2913006107D5 /* CarTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10680791E2B2913006107D5 /* CarTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewUITests.swift; sourceTree = "<group>"; };
+		E106807B1E2B2913006107D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10680871E2B2925006107D5 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		E10680891E2C6137006107D5 /* CarsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsDataSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10680531E2B2913006107D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10680671E2B2913006107D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10680721E2B2913006107D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E106804D1E2B2913006107D5 = {
+			isa = PBXGroup;
+			children = (
+				E10680581E2B2913006107D5 /* CarTableView */,
+				E106806D1E2B2913006107D5 /* CarTableViewTests */,
+				E10680781E2B2913006107D5 /* CarTableViewUITests */,
+				E10680571E2B2913006107D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E10680571E2B2913006107D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10680561E2B2913006107D5 /* CarTableView.app */,
+				E106806A1E2B2913006107D5 /* CarTableViewTests.xctest */,
+				E10680751E2B2913006107D5 /* CarTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E10680581E2B2913006107D5 /* CarTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E10680591E2B2913006107D5 /* AppDelegate.swift */,
+				E106805B1E2B2913006107D5 /* CarsViewController.swift */,
+				E106805D1E2B2913006107D5 /* Main.storyboard */,
+				E10680871E2B2925006107D5 /* Car.swift */,
+				E10680891E2C6137006107D5 /* CarsDataSource.swift */,
+				E10680601E2B2913006107D5 /* Assets.xcassets */,
+				E10680621E2B2913006107D5 /* LaunchScreen.storyboard */,
+				E10680651E2B2913006107D5 /* Info.plist */,
+			);
+			path = CarTableView;
+			sourceTree = "<group>";
+		};
+		E106806D1E2B2913006107D5 /* CarTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E106806E1E2B2913006107D5 /* CarTableViewTests.swift */,
+				E10680701E2B2913006107D5 /* Info.plist */,
+			);
+			path = CarTableViewTests;
+			sourceTree = "<group>";
+		};
+		E10680781E2B2913006107D5 /* CarTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E10680791E2B2913006107D5 /* CarTableViewUITests.swift */,
+				E106807B1E2B2913006107D5 /* Info.plist */,
+			);
+			path = CarTableViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10680551E2B2913006107D5 /* CarTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E106807E1E2B2913006107D5 /* Build configuration list for PBXNativeTarget "CarTableView" */;
+			buildPhases = (
+				E10680521E2B2913006107D5 /* Sources */,
+				E10680531E2B2913006107D5 /* Frameworks */,
+				E10680541E2B2913006107D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarTableView;
+			productName = CarTableView;
+			productReference = E10680561E2B2913006107D5 /* CarTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E10680691E2B2913006107D5 /* CarTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10680811E2B2913006107D5 /* Build configuration list for PBXNativeTarget "CarTableViewTests" */;
+			buildPhases = (
+				E10680661E2B2913006107D5 /* Sources */,
+				E10680671E2B2913006107D5 /* Frameworks */,
+				E10680681E2B2913006107D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E106806C1E2B2913006107D5 /* PBXTargetDependency */,
+			);
+			name = CarTableViewTests;
+			productName = CarTableViewTests;
+			productReference = E106806A1E2B2913006107D5 /* CarTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E10680741E2B2913006107D5 /* CarTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10680841E2B2913006107D5 /* Build configuration list for PBXNativeTarget "CarTableViewUITests" */;
+			buildPhases = (
+				E10680711E2B2913006107D5 /* Sources */,
+				E10680721E2B2913006107D5 /* Frameworks */,
+				E10680731E2B2913006107D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E10680771E2B2913006107D5 /* PBXTargetDependency */,
+			);
+			name = CarTableViewUITests;
+			productName = CarTableViewUITests;
+			productReference = E10680751E2B2913006107D5 /* CarTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E106804E1E2B2913006107D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Amy Roberson";
+				TargetAttributes = {
+					E10680551E2B2913006107D5 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = N75G8FC36Y;
+						ProvisioningStyle = Automatic;
+					};
+					E10680691E2B2913006107D5 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = N75G8FC36Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E10680551E2B2913006107D5;
+					};
+					E10680741E2B2913006107D5 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = N75G8FC36Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E10680551E2B2913006107D5;
+					};
+				};
+			};
+			buildConfigurationList = E10680511E2B2913006107D5 /* Build configuration list for PBXProject "CarTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E106804D1E2B2913006107D5;
+			productRefGroup = E10680571E2B2913006107D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10680551E2B2913006107D5 /* CarTableView */,
+				E10680691E2B2913006107D5 /* CarTableViewTests */,
+				E10680741E2B2913006107D5 /* CarTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10680541E2B2913006107D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10680641E2B2913006107D5 /* LaunchScreen.storyboard in Resources */,
+				E10680611E2B2913006107D5 /* Assets.xcassets in Resources */,
+				E106805F1E2B2913006107D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10680681E2B2913006107D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10680731E2B2913006107D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10680521E2B2913006107D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E106805C1E2B2913006107D5 /* CarsViewController.swift in Sources */,
+				E106805A1E2B2913006107D5 /* AppDelegate.swift in Sources */,
+				E10680881E2B2925006107D5 /* Car.swift in Sources */,
+				E106808A1E2C6137006107D5 /* CarsDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10680661E2B2913006107D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E106806F1E2B2913006107D5 /* CarTableViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10680711E2B2913006107D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E106807A1E2B2913006107D5 /* CarTableViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E106806C1E2B2913006107D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10680551E2B2913006107D5 /* CarTableView */;
+			targetProxy = E106806B1E2B2913006107D5 /* PBXContainerItemProxy */;
+		};
+		E10680771E2B2913006107D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10680551E2B2913006107D5 /* CarTableView */;
+			targetProxy = E10680761E2B2913006107D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E106805D1E2B2913006107D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E106805E1E2B2913006107D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E10680621E2B2913006107D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E10680631E2B2913006107D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E106807C1E2B2913006107D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E106807D1E2B2913006107D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E106807F1E2B2913006107D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N75G8FC36Y;
+				INFOPLIST_FILE = CarTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.roberson.amy.CarTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E10680801E2B2913006107D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N75G8FC36Y;
+				INFOPLIST_FILE = CarTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.roberson.amy.CarTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E10680821E2B2913006107D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N75G8FC36Y;
+				INFOPLIST_FILE = CarTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.roberson.amy.CarTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarTableView.app/CarTableView";
+			};
+			name = Debug;
+		};
+		E10680831E2B2913006107D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N75G8FC36Y;
+				INFOPLIST_FILE = CarTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.roberson.amy.CarTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarTableView.app/CarTableView";
+			};
+			name = Release;
+		};
+		E10680851E2B2913006107D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N75G8FC36Y;
+				INFOPLIST_FILE = CarTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.roberson.amy.CarTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CarTableView;
+			};
+			name = Debug;
+		};
+		E10680861E2B2913006107D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N75G8FC36Y;
+				INFOPLIST_FILE = CarTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.roberson.amy.CarTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CarTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E10680511E2B2913006107D5 /* Build configuration list for PBXProject "CarTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E106807C1E2B2913006107D5 /* Debug */,
+				E106807D1E2B2913006107D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E106807E1E2B2913006107D5 /* Build configuration list for PBXNativeTarget "CarTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E106807F1E2B2913006107D5 /* Debug */,
+				E10680801E2B2913006107D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E10680811E2B2913006107D5 /* Build configuration list for PBXNativeTarget "CarTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10680821E2B2913006107D5 /* Debug */,
+				E10680831E2B2913006107D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E10680841E2B2913006107D5 /* Build configuration list for PBXNativeTarget "CarTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10680851E2B2913006107D5 /* Debug */,
+				E10680861E2B2913006107D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E106804E1E2B2913006107D5 /* Project object */;
+}
